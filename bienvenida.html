@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+
+    <title>App-Inicio</title>
+  </head>
+  <body>    
+    <section class="d-flex justify-content-between top_bar">
+		<p>Mobilize</p>
+		<i class="far fa-bell"></i>		
+    </section>
+	<section class="publicacion">
+    	<div class="d-flex justify-content-between" style=" margin: 15px 15px;">
+    		<section class="d-flex info_perfil">    			
+	    		<img src="img/perfil.png" alt="" style="">
+	    		<p>Name <span style="font-size: 10px">@name</span></p>
+    		</section>
+    		<button class="btn btn-sm btn-outline-secondary">Seguir</button>
+    	</div>
+    </section>
+		<img  class="d-flex img_card" src="img/dee.jpg" alt="">
+	<section class="call_action">
+    	<div class="info_call_action d-flex justify-content-between" style="margin: 10px 10px;">
+    		<section class="d-flex">    
+				<i class="far fa-heart"></i>
+				<i class="far fa-comment"></i>
+				<i class="fas fa-location-arrow"></i>	
+    		</section>
+    			<i class="far fa-heart"></i>	
+    	</div>
+	</section>
+    <section class="d-flex fixed-bottom justify-content-center bar_botton">
+		<i class="fas fa-home"></i>
+		<i class="fas fa-search"></i>
+		<i class="fas fa-plus-circle"></i>
+		<i class="fas fa-home"></i>
+		<i class="fas fa-user"></i>	
+    </section>
+    <div class="modal fade" id="mostrarmodal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+           <div class="modal-body" style="background-color: #464646; color: white; height: 360px">
+				<p class="text-center"><b>Te Damos la bienvenida!</b></p>
+				<p class="text-center" style="font-size: 14px">antes de comenzar te recomendamos algunos usuarios que quizas te gustaria seguir para estar al tanto de tus intereses.</p>
+				<div class="my-2 seg_recomendado">
+					<img src="img/perfil.png" class="d-block" alt="...">
+					<p class="text-center d-block">Usuario</p>
+					<span class="text-center d-block">@user</span>
+					<button class="btn btn-sm d-block justify-content-center"><i class="fas fa-user-plus"></i> Seguir</button>
+				</div>              	
+				<button class="btn btn-sm btn_default">Filanizar</button>
+       		</div>
+	      </div>
+	   </div>
+	</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function()
+      {
+         $("#mostrarmodal").modal("show");
+      });
+    </script>
+  </body>
+</html>
